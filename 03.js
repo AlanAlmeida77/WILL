@@ -15,6 +15,18 @@ function buscarAmigo(amigos, nombre) {
 
   // Tu código aca:
   
+    var i = 0;
+    while (i < amigos.length && amigos[i].nombre != nombre) {
+      i++;
+    }
+    if (i < amigos.length) {
+      return amigos[i];
+    }
+    else {
+      return null;
+    }
+  
+
 }
 
 // No modifiques nada debajo de esta linea //
